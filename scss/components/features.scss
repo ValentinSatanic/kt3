@@ -1,0 +1,23 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(20);
+  padding: rem(40) rem(20);
+
+  &__item {
+    background: #fff;
+    padding: rem(20);
+    border-radius: rem(10);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  }
+
+  &__title {
+    @extend %title;
+    font-size: rem(22);
+  }
+
+  &__text {
+    font-size: rem(16);
+    color: #555;
+  }
+}
